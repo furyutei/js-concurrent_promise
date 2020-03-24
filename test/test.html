@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>[Trial] js-concurrent_promise</title>
+<style>
+body {
+    font-size: 16px;
+}
+
+h1, h2, h3, h4, h5 {
+    margin: 0 0 8px 0;
+}
+pre {
+    margin: 0 16px 16px;
+}
+</style>
+</head>
+<body>
+    <h1>[Trial] <a href="https://github.com/furyutei/js-concurrent_promise">js-concurrent_promise</a></h1>
+    <h2>Node: Open the Developer tools to perform the operation.</h2>
+    <div>
+        <h3>Usage</h3>
+        <div>
+            <h4>Run Test</h4>
+            <pre>
+test.run( target_module, promise_number, max_concurrent_worker );
+
+  - target_module: Test target module( concurrentPromise / concurrent_promise )
+    &gt; concurrentPromise: simple version (run Promise.all with each max_concurrent_worker)
+    &gt; concurrent_promise: efficiency improvement version
+  
+  - promise_number: Total Promise number
+  - max_concurrent_worker: Max concurrent Promise number (default: 10)
+
+Ex.1) test.run( concurrentPromise, 100, 10 );
+Ex.2) test.run( concurrent_promise, 100, 10 );
+            </pre>
+        </div>
+        <div>
+            <h4>Cancel Test</h4>
+            <pre>
+test.cancel();
+            </pre>
+        </div>
+    </div>
+    <script src="../src/js/concurrentPromise.js"></script>
+    <script src="../src/js/concurrent_promise.js"></script>
+    <script src="./test.js"></script>
+</body>
+</html>
