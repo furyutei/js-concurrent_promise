@@ -68,3 +68,8 @@ test.run( concurrent_promise, 100, 10 );
 test.cancel();
 
 ```
+
+Performance Comparison of Parallel Processing
+---
+
+![Performance Comparison of Parallel Processing in JavaScript](https://github.com/furyutei/js-concurrent_promise/raw/images/PerformanceComparison.png)  
