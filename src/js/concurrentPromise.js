@@ -26,4 +26,4 @@ Object.assign( exports, {
     execute : execute,
 } );
 
-} )( ( typeof exports != 'undefined' ) ? exports : this[ 'concurrentPromise' ] = {} );
+} )( ( typeof exports != 'undefined' ) ? exports : ( ( typeof window != 'undefined' ) ? window : this )[ 'concurrentPromise' ] = {} );

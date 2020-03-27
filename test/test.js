@@ -145,4 +145,4 @@ Object.assign( exports, {
 } );
 
 
-} )( ( typeof exports != 'undefined' ) ? exports : this[ 'test' ] = {} );
+} )( ( typeof exports != 'undefined' ) ? exports : ( ( typeof window != 'undefined' ) ? window : this )[ 'test' ] = {} );
